@@ -41,6 +41,7 @@
             // 
             // comboBox_year
             // 
+            comboBox_year.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox_year.FormattingEnabled = true;
             comboBox_year.Items.AddRange(new object[] { "תשפ\"ד", "תשפ\"ה", "תשפ\"ו", "תשפ\"ז", "תשפ\"ח", "תשפ\"ט", "תש\"צ", "תשצ\"א", "תשצ\"ב", "תשצ\"ג" });
             comboBox_year.Location = new Point(12, 42);
@@ -51,6 +52,7 @@
             // 
             // comboBox_weekDays
             // 
+            comboBox_weekDays.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox_weekDays.FormattingEnabled = true;
             comboBox_weekDays.Items.AddRange(new object[] { "ראשון", "שני", "שלישי", "רביעי", "חמישי", "ששי" });
             comboBox_weekDays.Location = new Point(621, 42);
@@ -61,6 +63,7 @@
             // 
             // comboBox_monthDays
             // 
+            comboBox_monthDays.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox_monthDays.FormattingEnabled = true;
             comboBox_monthDays.Items.AddRange(new object[] { "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30" });
             comboBox_monthDays.Location = new Point(426, 42);
@@ -71,6 +74,7 @@
             // 
             // comboBox_months
             // 
+            comboBox_months.DropDownStyle = ComboBoxStyle.DropDownList;
             comboBox_months.FormattingEnabled = true;
             comboBox_months.Items.AddRange(new object[] { "תשרי", "מרחשון", "כסלו", "טבת", "שבט", "אדר", "אדר הראשון", "אדר השני", "ניסן", "אייר", "סיון", "תמוז", "אב", "אלול" });
             comboBox_months.Location = new Point(221, 42);
