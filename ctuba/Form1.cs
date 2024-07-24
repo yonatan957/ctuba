@@ -79,9 +79,25 @@ namespace ctuba
                 MessageBox.Show("אנה הכנס את כל הערכים, כבוד הרב");
                 return;                
             }
-            string ressult = $" ב{_myweekDays[weekDay]} בשבת {_mydays[monthDay]} לירח {month} {_myyears[year]}";
+            if (monthDay == "30")
+            {
+                if (month == "אדר")
+                {
+                    month += $" שהוא ראש חודש ניסן";
+                }
+                else
+                {
+                    month += $" שהוא ראש חודש {comboBox_months.Items[comboBox_months.SelectedIndex + 1]}";
+                }
+            }
+            if (monthDay == "1")
+            {
+                month += $" שהוא ראש חודש {month}";
+            }
+            string ressult = $" ב{_myweekDays[weekDay]} בשבת {_mydays[monthDay]} לירח {month} {_myyears[year]}";            
             MessageBox.Show(ressult);
             string path = "ctuba.xml";
+            month = comboBox_months.Text.Trim();
             //adding to xml
             XDocument xDocument = XDocument.Load(path);
             XElement xmlmonth = new XElement("Month", month);
